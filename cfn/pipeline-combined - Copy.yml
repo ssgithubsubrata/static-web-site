@@ -55,7 +55,7 @@ Resources:
           - Sid: PublicReadForGetBucketObjects
             Effect: Allow
             Principal: '*'
-            Action: 's3:GetObject'
+            Action: '*'
             Resource: !Join ['', ['arn:aws:s3:::', 'site-bucket', '/*']]
       Bucket: site-bucket
   CodePipelineBucket:
